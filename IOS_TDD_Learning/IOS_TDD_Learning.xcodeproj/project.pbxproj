@@ -19,6 +19,11 @@
 		6482225F20FCFDB100535188 /* IOS_TDD_LearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6482225E20FCFDB100535188 /* IOS_TDD_LearningUITests.swift */; };
 		7E276B700F8F80CC221A74E9 /* Pods_IOS_TDD_LearningUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4331671304A1F3AE38C661FA /* Pods_IOS_TDD_LearningUITests.framework */; };
 		954482D46C2D2DB1338D8B2F /* Pods_IOS_TDD_LearningTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229BC81977E9C4B085EBA0AF /* Pods_IOS_TDD_LearningTests.framework */; };
+		D181D21718EF65D2ADA48672 /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181D90C2C4BCB53D67CAC5D /* UIFactory.swift */; };
+		D181D656570C942B69D37031 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181D329C22D163B53A7737B /* TestView.swift */; };
+		D181D8F7ADABC66FDA2B62E8 /* UIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181D90C2C4BCB53D67CAC5D /* UIFactory.swift */; };
+		D181DB375069CCA4B449EC28 /* MyRootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181DBA0563128AAD622BCD4 /* MyRootNavigationController.swift */; };
+		D181DBC851A9806D856EA335 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181D329C22D163B53A7737B /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,9 @@
 		94394139849859C6E16D3917 /* Pods_IOS_TDD_Learning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_TDD_Learning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8A86861316B2E2F8505AA1 /* Pods-IOS_TDD_LearningTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_TDD_LearningTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOS_TDD_LearningTests/Pods-IOS_TDD_LearningTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B08B897EC3E2C81C4ED3950A /* Pods-IOS_TDD_Learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_TDD_Learning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOS_TDD_Learning/Pods-IOS_TDD_Learning.debug.xcconfig"; sourceTree = "<group>"; };
+		D181D329C22D163B53A7737B /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		D181D90C2C4BCB53D67CAC5D /* UIFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFactory.swift; sourceTree = "<group>"; };
+		D181DBA0563128AAD622BCD4 /* MyRootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRootNavigationController.swift; sourceTree = "<group>"; };
 		DB35DEF0566EE647D2D29CFD /* Pods-IOS_TDD_LearningTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_TDD_LearningTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOS_TDD_LearningTests/Pods-IOS_TDD_LearningTests.release.xcconfig"; sourceTree = "<group>"; };
 		DC43FB159AF7E66C6A56BB09 /* Pods-IOS_TDD_LearningUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_TDD_LearningUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOS_TDD_LearningUITests/Pods-IOS_TDD_LearningUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +144,9 @@
 				6482224A20FCFDB000535188 /* Info.plist */,
 				6482224220FCFDB000535188 /* IOS_TDD_Learning.xcdatamodeld */,
 				6468321F20FE671D00332915 /* MLcontroller.swift */,
+				D181D4A4DEABA3F45F81B1CD /* MyNavigationController */,
+				D181DA517EEC7F7ADFE30AFE /* UIFactory */,
+				D181D329C22D163B53A7737B /* TestView.swift */,
 			);
 			path = IOS_TDD_Learning;
 			sourceTree = "<group>";
@@ -156,6 +167,22 @@
 				6482226020FCFDB100535188 /* Info.plist */,
 			);
 			path = IOS_TDD_LearningUITests;
+			sourceTree = "<group>";
+		};
+		D181D4A4DEABA3F45F81B1CD /* MyNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				D181DBA0563128AAD622BCD4 /* MyRootNavigationController.swift */,
+			);
+			path = MyNavigationController;
+			sourceTree = "<group>";
+		};
+		D181DA517EEC7F7ADFE30AFE /* UIFactory */ = {
+			isa = PBXGroup;
+			children = (
+				D181D90C2C4BCB53D67CAC5D /* UIFactory.swift */,
+			);
+			path = UIFactory;
 			sourceTree = "<group>";
 		};
 		DA08BEC292AB7C55C01B8571 /* Pods */ = {
@@ -385,6 +412,9 @@
 				6482223E20FCFDB000535188 /* ViewController.swift in Sources */,
 				6468322020FE671D00332915 /* MLcontroller.swift in Sources */,
 				6482223C20FCFDB000535188 /* AppDelegate.swift in Sources */,
+				D181DB375069CCA4B449EC28 /* MyRootNavigationController.swift in Sources */,
+				D181D21718EF65D2ADA48672 /* UIFactory.swift in Sources */,
+				D181D656570C942B69D37031 /* TestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +423,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6482225420FCFDB100535188 /* IOS_TDD_LearningTests.swift in Sources */,
+				D181D8F7ADABC66FDA2B62E8 /* UIFactory.swift in Sources */,
+				D181DBC851A9806D856EA335 /* TestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
