@@ -5,7 +5,6 @@
 //  Created by Wenqi Yuan  on 17/07/2018.
 //  Copyright © 2018 Wenqi Yuan . All rights reserved.
 //
-
 import XCTest
 @testable import IOS_TDD_Learning
 
@@ -21,9 +20,17 @@ class IOS_TDD_LearningTests: XCTestCase {
         super.tearDown()
     }
     
+    fileprivate func dadadda() {
+        for i in 1...3 {
+            print(i)
+        }
+    }
+    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let a = 3
+        XCTAssertTrue(a == 3)
     }
     
     func testPerformanceExample() {
@@ -32,5 +39,6 @@ class IOS_TDD_LearningTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
     
 }
