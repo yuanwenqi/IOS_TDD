@@ -8,6 +8,7 @@ target 'IOS_TDD_Learning' do
   # Pods for IOS_TDD_Learning
 
   pod 'Typhoon'
+  pod 'SnapKit', '~> 4.0.0'
 
   target 'IOS_TDD_LearningTests' do
     inherit! :search_paths

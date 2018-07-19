@@ -6,7 +6,6 @@
 //  Copyright © 2018 Wenqi Yuan . All rights reserved.
 //
 import XCTest
-@testable import IOS_TDD_Learning
 
 class IOS_TDD_LearningTests: XCTestCase {
     
@@ -39,6 +38,6 @@ class IOS_TDD_LearningTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
-    
+
 }
+

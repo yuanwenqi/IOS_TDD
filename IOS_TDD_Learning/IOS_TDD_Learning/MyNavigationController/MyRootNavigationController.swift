@@ -9,5 +9,7 @@ class MyRootNavigationController:UINavigationController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationBar.backgroundColor = .red
+        self.navigationBar.tintColor = .green
     }
+
 }

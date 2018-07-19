@@ -8,7 +8,9 @@
 
 import UIKit
 import CoreData
-import Typhoon
+
+class MyTabBarController {
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,8 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        Typhoon
+        application.statusBarStyle=UIStatusBarStyle.lightContent
+        CreateRootViewController()
         return true
+    }
+
+    private func CreateRootViewController() {
+        window? = UIWindow(frame:UIScreen.main.bounds )
+        window?.rootViewController = MyRootNavigationController(rootViewController: MyHomePageController())
+        window?.makeKeyAndVisible()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
