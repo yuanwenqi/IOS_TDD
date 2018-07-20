@@ -19,8 +19,17 @@
 		7E276B700F8F80CC221A74E9 /* Pods_IOS_TDD_LearningUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4331671304A1F3AE38C661FA /* Pods_IOS_TDD_LearningUITests.framework */; };
 		954482D46C2D2DB1338D8B2F /* Pods_IOS_TDD_LearningTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229BC81977E9C4B085EBA0AF /* Pods_IOS_TDD_LearningTests.framework */; };
 		D181D1F35AFB4FA62C03A285 /* MyHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181DA335F92D07796D9B2C2 /* MyHomePageViewController.swift */; };
+		D181D219B73CC6720D5A445C /* ExpenseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181DE7AEF56E0308BEEEC3E /* ExpenseTableCell.swift */; };
 		D181D28023460A33C56DD2B1 /* MyHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181DA335F92D07796D9B2C2 /* MyHomePageViewController.swift */; };
+		D181D65D9E7E400C51530D56 /* MyExpenseCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181DF9B4D4117D548272D29 /* MyExpenseCellModel.swift */; };
+		D181D90ACB6CFDE4836761E1 /* ExpenseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181DE7AEF56E0308BEEEC3E /* ExpenseTableCell.swift */; };
+		D181DA7AB20FE2C776E2C28C /* MyListPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181DBF3D66EE6EAC2D0F179 /* MyListPageController.swift */; };
+		D181DB0D51BDEA94D8F2F96D /* MyExpenseCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181DF9B4D4117D548272D29 /* MyExpenseCellModel.swift */; };
 		D181DB375069CCA4B449EC28 /* MyRootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181DBA0563128AAD622BCD4 /* MyRootNavigationController.swift */; };
+		D181DB39E345E1B745479741 /* MyListPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181DBF3D66EE6EAC2D0F179 /* MyListPageController.swift */; };
+		D181DC4BCD33520658FA5BCD /* MyListPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181DBF3D66EE6EAC2D0F179 /* MyListPageController.swift */; };
+		D181DD67AA144B62A53277FA /* MyExpenseCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181DF9B4D4117D548272D29 /* MyExpenseCellModel.swift */; };
+		D181DDBA4AA069999D2492C6 /* ExpenseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D181DE7AEF56E0308BEEEC3E /* ExpenseTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +73,9 @@
 		B08B897EC3E2C81C4ED3950A /* Pods-IOS_TDD_Learning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_TDD_Learning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOS_TDD_Learning/Pods-IOS_TDD_Learning.debug.xcconfig"; sourceTree = "<group>"; };
 		D181DA335F92D07796D9B2C2 /* MyHomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHomePageViewController.swift; sourceTree = "<group>"; };
 		D181DBA0563128AAD622BCD4 /* MyRootNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRootNavigationController.swift; sourceTree = "<group>"; };
+		D181DBF3D66EE6EAC2D0F179 /* MyListPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyListPageController.swift; sourceTree = "<group>"; };
+		D181DE7AEF56E0308BEEEC3E /* ExpenseTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseTableCell.swift; sourceTree = "<group>"; };
+		D181DF9B4D4117D548272D29 /* MyExpenseCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyExpenseCellModel.swift; sourceTree = "<group>"; };
 		DB35DEF0566EE647D2D29CFD /* Pods-IOS_TDD_LearningTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_TDD_LearningTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOS_TDD_LearningTests/Pods-IOS_TDD_LearningTests.release.xcconfig"; sourceTree = "<group>"; };
 		DC43FB159AF7E66C6A56BB09 /* Pods-IOS_TDD_LearningUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_TDD_LearningUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOS_TDD_LearningUITests/Pods-IOS_TDD_LearningUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +152,7 @@
 				6482224220FCFDB000535188 /* IOS_TDD_Learning.xcdatamodeld */,
 				D181D4A4DEABA3F45F81B1CD /* MyNavigationController */,
 				D181D4D03EBEF3B2CD8375E9 /* MyHomePageController */,
+				D181D4EE7AC92D6285294411 /* MyListPageController */,
 			);
 			path = IOS_TDD_Learning;
 			sourceTree = "<group>";
@@ -162,6 +175,14 @@
 			path = IOS_TDD_LearningUITests;
 			sourceTree = "<group>";
 		};
+		D181D4A304493E0BE3D2EAFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D181DE7AEF56E0308BEEEC3E /* ExpenseTableCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D181D4A4DEABA3F45F81B1CD /* MyNavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +197,24 @@
 				D181DA335F92D07796D9B2C2 /* MyHomePageViewController.swift */,
 			);
 			path = MyHomePageController;
+			sourceTree = "<group>";
+		};
+		D181D4EE7AC92D6285294411 /* MyListPageController */ = {
+			isa = PBXGroup;
+			children = (
+				D181DBF3D66EE6EAC2D0F179 /* MyListPageController.swift */,
+				D181DE752FB242B6777CF79D /* Model */,
+				D181D4A304493E0BE3D2EAFB /* View */,
+			);
+			path = MyListPageController;
+			sourceTree = "<group>";
+		};
+		D181DE752FB242B6777CF79D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D181DF9B4D4117D548272D29 /* MyExpenseCellModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DA08BEC292AB7C55C01B8571 /* Pods */ = {
@@ -408,6 +447,9 @@
 				6482223C20FCFDB000535188 /* AppDelegate.swift in Sources */,
 				D181DB375069CCA4B449EC28 /* MyRootNavigationController.swift in Sources */,
 				D181D28023460A33C56DD2B1 /* MyHomePageViewController.swift in Sources */,
+				D181DB39E345E1B745479741 /* MyListPageController.swift in Sources */,
+				D181D65D9E7E400C51530D56 /* MyExpenseCellModel.swift in Sources */,
+				D181D90ACB6CFDE4836761E1 /* ExpenseTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +459,9 @@
 			files = (
 				6482225420FCFDB100535188 /* IOS_TDD_LearningTests.swift in Sources */,
 				D181D1F35AFB4FA62C03A285 /* MyHomePageViewController.swift in Sources */,
+				D181DC4BCD33520658FA5BCD /* MyListPageController.swift in Sources */,
+				D181DD67AA144B62A53277FA /* MyExpenseCellModel.swift in Sources */,
+				D181DDBA4AA069999D2492C6 /* ExpenseTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +470,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6482225F20FCFDB100535188 /* IOS_TDD_LearningUITests.swift in Sources */,
+				D181DA7AB20FE2C776E2C28C /* MyListPageController.swift in Sources */,
+				D181DB0D51BDEA94D8F2F96D /* MyExpenseCellModel.swift in Sources */,
+				D181D219B73CC6720D5A445C /* ExpenseTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
