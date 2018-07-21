@@ -5,16 +5,31 @@
 
 import Foundation
 import UIKit
+import SnapKit
 class ExpenseTableCell:UITableViewCell{
-    let titleLabel = UILabel()
-    let payerLabel = UILabel()
+
     let priceLabel = UILabel()
-    init(style: UITableViewCellStyle, reuseIdentifier: String?){
-        super.init(style: UITableViewCellStyle, reuseIdentifier: reuseIdentifier)
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?){
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.addSubview(priceLabel)
     }
 
-    override class func load(data:MyExpenseCellModel) {
-        super.load()
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        priceLabel.snp.makeConstraints { make in
+            make.top.equalTo(10)
+            make.right.equalTo(-10)
+            make.bottom.equalTo(-10)
+            make.width.equalTo(priceLabel.snp.height)
+         }
+    }
 
+    func loadData(data:MyExpenseCellModel){
+        self.textLabel?.text = data.title
+        self.detailTextLabel?.text = data.payer
+        self.priceLabel.text = data.payer
     }
 }

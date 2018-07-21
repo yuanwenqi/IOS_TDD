@@ -14,6 +14,7 @@ class MyListPageController:UIViewController,UITableViewDelegate,UITableViewDataS
         MyExpenseCellModel(title:"商品",payer:"张三",price:100.0)
     ]
     let tableView = UITableView()
+    let reusedID = "cell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,8 +40,8 @@ class MyListPageController:UIViewController,UITableViewDelegate,UITableViewDataS
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = UITableViewCell(style:.default ,reuseIdentifier: "cell")
-        cell.textLabel?.text = data[indexPath.row].title
+        let cell = ExpenseTableCell(style: .subtitle, reuseIdentifier: reusedID)
+        cell.loadData(data: data[indexPath.row])
         return cell
 
     }
