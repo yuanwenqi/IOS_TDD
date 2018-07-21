@@ -23,13 +23,13 @@ class ExpenseTableCell:UITableViewCell{
             make.top.equalTo(10)
             make.right.equalTo(-10)
             make.bottom.equalTo(-10)
-            make.width.equalTo(priceLabel.snp.height)
+            make.width.equalTo(100)
          }
     }
 
     func loadData(data:MyExpenseCellModel){
         self.textLabel?.text = data.title
         self.detailTextLabel?.text = data.payer
-        self.priceLabel.text = data.payer
+        self.priceLabel.text = String(format: "%.2f", data.price)
     }
 }

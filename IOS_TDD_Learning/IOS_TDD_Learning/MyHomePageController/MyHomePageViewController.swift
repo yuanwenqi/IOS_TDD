@@ -14,14 +14,17 @@ class MyHomePageController:UIViewController,UITableViewDelegate,UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Home"
-        tableView.delegate = self
-        tableView.dataSource = self
+        setupTableView()
         setup()
-        addSubViews()
     }
 
-    private func addSubViews() {
+    private func setupTableView() {
         self.view.addSubview(tableView)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellid)
+        tableView.register(UINib(nibName: cellid, bundle: nil), forCellReuseIdentifier: cellid)
+        tableView.tableFooterView = UIView(frame: .zero)
     }
 
     private func setup() {

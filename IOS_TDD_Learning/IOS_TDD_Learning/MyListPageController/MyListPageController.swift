@@ -19,9 +19,16 @@ class MyListPageController:UIViewController,UITableViewDelegate,UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = title
+        setupTabView()
+    }
+
+    private func setupTabView() {
+        self.view.addSubview(tableView)
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.view.addSubview(tableView)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: reusedID)
+        tableView.register(UINib(nibName: reusedID, bundle: nil), forCellReuseIdentifier: reusedID)
+        tableView.tableFooterView = UIView(frame: .zero)
     }
 
     override func viewWillLayoutSubviews() {
@@ -48,5 +55,11 @@ class MyListPageController:UIViewController,UITableViewDelegate,UITableViewDataS
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+        let newView = MyDetailsPageController()
+        self.navigationController!.pushViewController(newView, animated: true)
     }
 }
